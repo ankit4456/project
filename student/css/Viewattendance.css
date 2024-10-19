@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    background: #0e0e0e;
+    color: white;
+}
+
+.star {
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Star styles */
+.star:nth-child(1) { left: 10%; width: 3px; height: 3px; animation-duration: 3s; animation-delay: 0s; }
+.star:nth-child(2) { left: 20%; width: 2px; height: 2px; animation-duration: 4s; animation-delay: 0.5s; }
+.star:nth-child(3) { left: 30%; width: 4px; height: 4px; animation-duration: 5s; animation-delay: 1s; }
+.star:nth-child(4) { left: 40%; width: 2px; height: 2px; animation-duration: 4s; animation-delay: 1.5s; }
+.star:nth-child(5) { left: 50%; width: 3px; height: 3px; animation-duration: 3s; animation-delay: 2s; }
+.star:nth-child(6) { left: 60%; width: 2px; height: 2px; animation-duration: 5s; animation-delay: 2.5s; }
+.star:nth-child(7) { left: 70%; width: 4px; height: 4px; animation-duration: 3s; animation-delay: 3s; }
+.star:nth-child(8) { left: 80%; width: 2px; height: 2px; animation-duration: 4s; animation-delay: 3.5s; }
+.star:nth-child(9) { left: 90%; width: 3px; height: 3px; animation-duration: 5s; animation-delay: 4s; }
+
+h1{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(192, 222, 116);
+    letter-spacing: 2px;
+
+}
+form {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+}
+label{
+    font-size: 19px;
+    font-weight: bolder;
+    color: rgb(241, 238, 238);
+    text-shadow: 2px 3px 5px rgb(237, 128, 241);
+}
+input[type="text"],
+input[type="number"] {
+    width: 8%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #746767;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#reg{
+    width: 13%;
+    padding: 6px;
+    font-size: 15px;
+    border: 1px solid #746767;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus {
+    border-color: #4CAF50; 
+}
+select {
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #deeabb;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+option {
+    background-color: #fff;
+    color: #333;
+}
+option:hover {
+    background-color: #f0f0f0;
+}
+#searchbar{
+    border-radius: 8px;
+    word-spacing: 15px;
+    box-shadow: 1px 1px 5px rgb(164, 203, 123); 
+}
+input[type="submit"]{
+    width: 12%;
+    color: white;
+    font-size: 17px;
+    background: rgb(84, 179, 234);
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonoff{
+color: rgb(13, 1, 1);
+font-size: 16px;
+opacity: 15;
+background: rgb(189, 235, 21);
+padding: 10px 16px;
+border: none;
+outline: none;
+border-radius: 4px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+}
+table{
+    font-size: 17px;
+    color: #f2ecec;
+    border: 1px solid #1eb16a00;
+}
+  th, td {
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+  }
+  th{
+    background-color: rgb(54, 142, 224);
+    color: rgb(248, 248, 248);
+  }
+  tr:nth-child(even) {
+    background-color: #c87db9;
+  }
+#formtwo {
+    width: 84rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(196, 20, 20, 0);
+    border-radius: 5px;
+    padding: 7px;
+    transform: tranlate(-50%,50%);
+    opacity: .9;
+}
+#nocolour {
+    background-color: transparent;
+    letter-spacing: normal;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(92, 26, 2);
+}
+
